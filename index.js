@@ -17,8 +17,7 @@ server.use(express.json());
 // DELETE - '/veiculos/:placa' (Excluir Veiculo)
 
 
-let veiculos = [{placa:'QQQ5B18', marca: 'Renault', modelo:'Sandero'}, 
-                {placa:'MJZ8644', marca: 'Renault', modelo:'Megane'}];
+let veiculos = [];
 
 server.get('/veiculos', (req, res)=>{
     return res.json(veiculos);
